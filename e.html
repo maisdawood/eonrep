@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="e.css">
+
+    </head>
+    <body>
+        <div>
+
+       
+<img src="shutterstock_1121931122 copy.jpg" width="40%">
+<img class="im" src="Group 11.png" >
+<img class="im2" src="aligner1.png">
+<img class="im4" src="Vector Smart Object Image - Copy.png" width="150px">
+   <img class="im3" src="Group 10.png" width="450px"><br>
+   <img class="im3" src="الأن بسعر التقويم المعدني.png" width="450px"><br><br>
+   <button class="but" type="button" id="myBtn" >احجز موعد استشارة</button>
+   <button class="but" type="button"id="myBtn2" style="background-color: rgb(137, 168, 107);">اعرف المزيد</button><br><br><br>
+   
+   <span class="sp" id="myBtn3" >احجز موعدك
+    الان!</span>
+   
+
+ </div>
+
+ <div id="myModal" class="modal">
+  
+    <div class="modal-content">
+        <span class="close ">&times;</span>
+        <div id="formFeilds">
+            <form id="form">
+                <div class="form-grid">
+                    <div id="error" class="error">حدث خطأ</div>
+                    <div>
+                        <label for="name">الإسم</label>
+                        <input type="text" class="wdt" id="name" name="name" placeholder="الإسم.."
+                            required />
+                    </div>
+                    <div>
+                        طريقة الاتصال
+                        <div style="display: flex; gap: 1em; margin-top: 10px">
+                            <br />
+                            <label class="con">بريد الكتروني
+                                <input value="email" type="radio" name="radio" id="contactMethod"
+                                    onclick="showField('email')" required />
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="con">واتس اب
+                                <input value="whatsApp" type="radio" name="radio" id="contactMethod"
+                                    onclick="showField('whatsApp')" />
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="con">رقم الهاتف
+                                <input value="phone" type="radio" name="radio" id="contactMethod"
+                                    onclick="showField('phone')" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="whats" id="whatsAppContainer">
+                            <label for="WhatsApp">واتس اب</label>
+                            <input type="text" class="wdt " id="whatsApp" name="whatsApp"
+                                placeholder="+962 xx xxxxxxx" />
+                        </div>
+
+                        <div class="email" id="emailContainer">
+                            <label for="email">البريد الالكتروني</label>
+                            <input type="text" class="wdt" id="email" name="email"
+                                placeholder="البريد الالكتروني.." />
+                        </div>
+
+                        <div class="phone" id="phoneContainer">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="text" class="wdt " id="phone" name="phone"
+                                placeholder="+962 xx xxxxxxx" />
+                        </div>
+                    </div>
+                </div>
+                <div class="grid justify-center">
+                    <button id="submitButton" type="submit" class="sbb ">
+                        ارسال
+                        <div id="spinner" class="dn"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+       
+    </div>
+</div>
+</div>
+<script src="e.js"></script>
+
+
+    </body>
+</html>
